@@ -2,7 +2,7 @@
 #define WATCHER_H
 
 #include <QObject>
-
+#include <QDebug>
 class watcher : public QObject
 {
     Q_OBJECT
@@ -12,6 +12,8 @@ public:
 signals:
 
 public slots:
+    void messageChanged(QString message);
+    void changeIntWa(int i);
 };
 
 #endif // WATCHER_H
